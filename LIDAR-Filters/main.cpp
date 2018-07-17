@@ -18,6 +18,12 @@ int main() {
 	cout << "TEST SESSION" << endl;
 	cout << "Loading LIDAR_data.csv" << ' ';
 	ifstream in_file("LIDAR_data.csv");
+	if (!in_file) {
+		cout << "Failed to load LIDAR_data.csv" << endl;
+		cout << "TEST END" << endl;
+		cin.ignore();
+		return 0;
+	}
 	string line_str;
 	vector<vector<float>> LIDAR_data;
 	while (getline(in_file, line_str))
@@ -65,6 +71,8 @@ int main() {
 	out_file2.close();
 	cout << "Done" << endl;
 
-	getchar();
+	cout << "TEST END" << endl;
+	cin.ignore();
+	cin.ignore();
 	return 0;
 }
