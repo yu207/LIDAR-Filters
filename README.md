@@ -1,3 +1,3 @@
 # LIDAR-Filters
-Brain Corp Coding Interview Question  
+Code sample for Brain Corp.  
 LIDAR Filters: Range Filter/Temporal Median Filter
